@@ -6,8 +6,7 @@ class ProductsController < ApplicationController
         @product = Product.new
     end
     def create
-        image = params[:product][:image].read
-        @product = Product.new(title: params[:product][:title], price: params[:product][:price], description: params[:product][:description], image: image)
+        @product = Product.new(title: params[:product][:title], price: params[:product][:price], description: params[:product][:description], thumbnail: params[:product][:thumbnail])
         @product.save
         redirect_to '/'
     end
