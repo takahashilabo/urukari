@@ -6,7 +6,8 @@ class ProductsController < ApplicationController
         @product = Product.new
     end
     def create
-        @product = Product.new(title: params[:product][:title], price: params[:product][:price], description: params[:product][:description], thumnail: params[:product][:thumnail])
+        image = params[:product][:image].read
+        @product = Product.new(title: params[:product][:title], price: params[:product][:price], description: params[:product][:description], image: image)
         @product.save
         redirect_to '/'
     end
@@ -15,4 +16,12 @@ class ProductsController < ApplicationController
         product.destroy
         redirect_to products_path
     end
+    def show
+        @product = Product.find(params[:id])
+    end
+    def get_image
+        product = Product.find(params[:id])
+        send_data product.image, disposition: :inline, type: 'image/png'
+    end
+
 end

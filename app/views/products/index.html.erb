@@ -1,0 +1,15 @@
+<% @products.each do |f| %>
+<p>
+  <%= f.title %>
+  <%= f.price %>円
+  <%= image_tag "/get_image/#{f.id}" %>
+  
+  <%= link_to '削除', product_path(f.id), method: :delete %>
+  <%= link_to '表示', product_path(f.id) %>
+</p>
+<% end %>
+
+<p>
+    <%= link_to "新商品追加", new_product_path %><br>
+    
+</p>
