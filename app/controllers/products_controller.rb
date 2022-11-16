@@ -15,4 +15,12 @@ class ProductsController < ApplicationController
         product.destroy
         redirect_to products_path
     end
+    def show
+        @product = Product.find(params[:id])
+    end
+    def get_image
+        product = Product.find(params[:id])
+        send_data product.image, disposition: :inline, type: 'image/png'
+    end
+
 end
