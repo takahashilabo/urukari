@@ -5,7 +5,7 @@ class TopController < ApplicationController
             login_password = BCrypt::Password.new(user.password)
             if login_password == params[:password]
                 session[:name] = user.name
-                redirect_to top_main_path
+                redirect_to products_path
             else
                 render "login"
             end
