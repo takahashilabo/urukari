@@ -6,5 +6,7 @@
     <strong>説明：</strong>
     <%= @product.description %>
 </p>
-
+<p>
+<%= link_to "購入", product_orders_path %>
+</p>
 <%= link_to "戻る", '/products' %>
