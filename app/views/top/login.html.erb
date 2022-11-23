@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+    <%= flash[:notice] %>
+<% end %>
+
 <%= form_tag '/top/login' , method: :post do %>
     <%= label_tag :name, '名前' %>
     <%= text_field_tag :name %>

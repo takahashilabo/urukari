@@ -23,5 +23,7 @@ class ProductsController < ApplicationController
         product = Product.find(params[:id])
         send_data product.image, disposition: :inline, type: 'product/png'
     end
-
+    
+   
+        
 end

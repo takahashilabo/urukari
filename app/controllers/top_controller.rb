@@ -1,4 +1,11 @@
 class TopController < ApplicationController
+    def main
+        if session[:name]
+            render "products"
+        else
+            render "login"
+        end
+    end
     def login
         user = User.find_by(name: params[:name])
         if user

@@ -9,4 +9,5 @@ Rails.application.routes.draw do
     get 'top/login'
     post 'products/index'
     get 'get_image/:id', to: 'products#get_image'
+    
 end
