@@ -1,6 +1,6 @@
 class TopController < ApplicationController
     def main
-        if session[:name]
+        if session[:id]
             render "products"
         else
             render "login"
@@ -8,7 +8,7 @@ class TopController < ApplicationController
     end
     def login
         user = User.find_by(name: params[:name])
-        if user
+        if  user
             login_password = BCrypt::Password.new(user.password)
             if login_password == params[:password]
                 session[:name] = user.name
@@ -22,7 +22,7 @@ class TopController < ApplicationController
     end
     
     def logout
-        session.delete(:name)
+        session.delete(:id)
         redirect_to top_main_path
     end
     
