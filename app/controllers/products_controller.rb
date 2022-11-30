@@ -24,6 +24,5 @@ class ProductsController < ApplicationController
         send_data product.image, disposition: :inline, type: 'product/png'
     end
     
-   
         
 end
