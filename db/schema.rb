@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_11_23_074816) do
 
   create_table "orders", force: :cascade do |t|
+    t.integer "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

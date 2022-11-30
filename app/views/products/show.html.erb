@@ -7,6 +7,6 @@
     <%= @product.description %>
 </p>
 <p>
-<%= link_to "購入", '/products/:product_id/orders' %>
+<%= link_to "購入", new_order_path(product_id: @product.id) %>
 </p>
 <%= link_to "戻る", '/products' %>

@@ -5,12 +5,11 @@ Rails.application.routes.draw do
     resources :users
     
     root 'top#login'
+    root 'top#main'
     get 'top/main'
     get 'top/login'
     post 'products/index'
     get 'get_image/:id', to: 'products#get_image'
-    resources :products do
+    resources :products
     resources :orders
-  end
-    
 end
