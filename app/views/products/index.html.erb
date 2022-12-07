@@ -1,12 +1,18 @@
 <% @products.each do |f| %>
-<p>
+  <p>
   <%= f.title %>
   <%= f.price %>円
   <%= image_tag "/get_image/#{f.id}" %>
   <%= link_to '削除', product_path(f.id), method: :delete %>
   <%= link_to '表示', product_path(f.id) %>
-</p>
+  </p>
+  <% if @flag == true then %>
+  <p>
+      Sold Out<br>
+  </p>
+  <% end %>
 <% end %>
+
 
 <p>
     <%= link_to "新商品追加", new_product_path %><br>
