@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2022_11_23_074816) do
     t.integer "user_id"
     t.integer "price"
     t.binary "image"
+    t.boolean "check", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

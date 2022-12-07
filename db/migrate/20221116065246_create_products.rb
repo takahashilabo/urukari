@@ -6,7 +6,8 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.integer :user_id
       t.integer :price
       t.binary :image
-
+      t.boolean :check, null:false, default: false
+      
       t.timestamps
     end
   end
