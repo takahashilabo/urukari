@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2022_11_23_074816) do
     t.string "password"
     t.string "name"
     t.string "address"
-    t.integer "number"
+    t.string "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

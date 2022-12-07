@@ -2,11 +2,11 @@
     <%= f.label :name, '名前' %>
     <%= f.text_field :name %>
     <%= f.label :email, 'メールアドレス' %>
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
     <%= f.label :address, '住所' %>
     <%= f.text_field :address %>
     <%= f.label :number, '電話番号' %>
-    <%= f.text_field :number %>
+    <%= f.telephone_field :number %>
     <%= f.submit '変更する' %>
 <% end %>
 

@@ -2,12 +2,12 @@
     <%= t.label :name, '名前' %>
     <%= t.text_field :name %>
     <%= t.label :password, 'パスワード' %>
-    <%= t.text_field :password %>
+    <%= t.password_field :password %>
     <%= t.label :email, 'メールアドレス' %>
-    <%= t.text_field :email %>
+    <%= t.email_field :email %>
     <%= t.label :address, '住所' %>
     <%= t.text_field :address %>
-    <%= t.label :number, '電話番号' %>
-    <%= t.text_field :number%>
+    <%= t.label :number, '電話番号(ハイフンなし)' %>
+    <%= t.telephone_field :number%>
     <%= t.submit '登録' %>
 <% end %>
