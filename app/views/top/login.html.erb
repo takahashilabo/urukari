@@ -1,15 +1,32 @@
-<% if flash[:notice] %>
-    <%= flash[:notice] %>
-<% end %>
-
-<%= form_tag '/top/login' , method: :post do %>
-    <%= label_tag :name, '名前' %>
-    <%= text_field_tag :name %>
-    <%= label_tag :password, 'パスワード' %>
-    <%= password_field_tag :password %>
-    <%= submit_tag 'ログイン' %>
-<% end %>
-<dir>
-    <%= link_to '新規登録の方はこちら', new_user_path %>
-</dir>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <%= stylesheet_link_tag 'top' %>
+    </head>
+    <body>
+        <div class="login_center_outer">    
+            <h2 class="page_title">ログイン</h2></div>
+            <% if flash[:notice] %>
+                <%= flash[:notice] %>
+            <% end %>
+            
+        <div class="login_center_outer">    
+            <div class="login_center_inner">
+                <%= form_tag '/top/login' , method: :post do %>
+                    <br><%= label_tag :name, '名前' %>
+                    <br><%= text_field_tag :name %>
+                    <br><%= label_tag :password, 'パスワード' %>
+                    <br><%= password_field_tag :password %>
+                    <div class="submit">
+                    <br><%= submit_tag 'ログイン' %></a>
+                    </div>
+                <% end %>
+                <div class="new_user">
+                <%= link_to '新規登録の方はこちら', new_user_path %>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
 
