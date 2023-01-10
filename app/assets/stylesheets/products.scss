@@ -1,3 +1,125 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.new {
+    box-sizing: border-box;
+    color: #333;
+    width: 900px;
+    height: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.new_title{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.new-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.new-item,
+.new-body {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.new-item {
+    text-align: left;
+    width: 40%;
+    background-color: #eee;
+}
+
+.new-body {
+    width: 60%;
+}
+
+.new-submit {
+    text-align: center;
+}
+
+.submit-button {
+    text-align: center;
+}
+.product-new-back {
+    text-align: center;
+}
+
+.product-show {
+    box-sizing: border-box;
+    width: 900px;
+    height: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.product-show-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.product-show-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-show-item,
+.product-show-body {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+}
+
+.product-show-item {
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+}
+
+.product-show-body {
+    width: 60%;
+}
+
+.order-new {
+    box-sizing: border-box;
+    width: 900px;
+    height: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.order-new-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.order-new-confirmation {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.order-index {
+    box-sizing: border-box;
+    width: 900px;
+    height: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.order-index-title {
+    font-size: 40px;
+    text-align: center;
+}

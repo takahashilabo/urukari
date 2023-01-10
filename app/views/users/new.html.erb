@@ -24,7 +24,11 @@
                     <td class="new-body"><%= t.text_field :number%></td>
                 </tr>
             </table>
-            <%= t.submit '登録' %>
+            <div class='user-new-submit'>
+            <%= t.submit '登録', class: 'user-new-submit-button' %>
+            </div>
         <% end %>
     </div>
 </body>
+
+ 

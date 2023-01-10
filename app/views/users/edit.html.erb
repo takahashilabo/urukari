@@ -1,13 +1,27 @@
-<%= form_for @user , url: {action: :update} do |f| %>
-    <%= f.label :name, '名前' %>
-    <%= f.text_field :name %>
-    <%= f.label :email, 'メールアドレス' %>
-    <%= f.email_field :email %>
-    <%= f.label :address, '住所' %>
-    <%= f.text_field :address %>
-    <%= f.label :number, '電話番号' %>
-    <%= f.telephone_field :number %>
-    <%= f.submit '変更する' %>
-<% end %>
-
-<p><%= link_to 'ログアウト', top_logout_path %></p>
+<div class="edit">
+    <h1 class="edit-title">個人情報編集ページ</h1>
+        <%= form_for @user , url: {action: :update} do |f| %>
+            <table class="edit-table">
+                <tr>
+                    <th class="edit-item"><%= f.label :name, '名前' %></th>
+                    <td class="edit-body"><%= f.text_field :name %></td>
+                </tr>
+                <tr>
+                    <th class="edit-item"><%= f.label :email, 'メールアドレス' %></th>
+                    <td class="edit-body"><%= f.email_field :email %></td>
+                </tr>
+                <tr>
+                    <th class="edit-item"><%= f.label :address, '住所' %></th>
+                    <td class="edit-body"><%= f.text_field :address %></td>
+                </tr>
+                <tr>
+                    <th class="edit-item"><%= f.label :number, '電話番号' %></th>
+                    <td class="edit-body"><%= f.telephone_field :number %></td>
+                </tr>
+            </table>
+            <div class="user-edit-submit"><%= f.submit '変更する', class: 'user-edit-submit-button' %></div>
+        <% end %>
+        <div class='user-edit-logout'>
+            <%= link_to 'ログアウト', top_logout_path %>
+        </div>
+</div>

@@ -53,13 +53,108 @@ input[type="email"] {
     height: bold;
 }
 
-input[type="submit"] {
+.user-new-submit {
     text-align: center;
-    width: 70px;
     height: bold;
+}
+
+.user-new-submit-button {
+    width: 100px;
+}
+
+.show {
+    box-sizing: border-box;
+    width: 900px;
+    height: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.show-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .show-table {
     border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.show-item,
+.show-body {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+}
+
+.show-item {
+    text-align: left;
+    width: 40%;
+}
+
+.show-body {
+    width: 60%;
+}
+
+.show-edit {
+    padding-right: 40px;
+}
+
+.show-back {
+    padding-left: 40px;
+}
+
+.edit {
+    box-sizing: border-box;
+    color: #333;
+    width: 900px;
+    height: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.edit-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.edit-table {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.edit-item,
+.edit-body {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.edit-item {
+    text-align: left;
+    width: 40%;
+    background-color: #eee;
+}
+
+.edit-body {
+    width: 60%;
+}
+
+.user-edit-logout {
+    text-align: center;
+    padding-top: 6px;
+}
+
+.user-edit-submit {
+    text-align: center;
+}
+
+.user-edit-submit-button {
+    width: 100px;
 }
 

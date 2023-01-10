@@ -1,15 +1,16 @@
-<h1>購入確認</h1>
-<p>本当によろしいですか</p>
-<p>
-    商品名：<%= Product.find(@order.product_id).title %><br>
-    価格：<%= Product.find(@order.product_id).price %>円<br>
-    商品説明：<%= Product.find(@order.product_id).description %><br>
-</p>
-
-<p>
-    <%= link_to "購入する", '/orders' %><br>
-</p>
-
-<p>
-    <%= link_to "戻る", :back %><br>
-</p>
+<div class="order-new">
+    <h1 class="order-new-title">購入確認</h1>
+    <p class="order-new-confirmation">本当によろしいですか？</p>
+    <p class="order-new-table">
+        商品名：<%= Product.find(@order.product_id).title %><br>
+        価格：<%= Product.find(@order.product_id).price %>円<br>
+        商品説明：<%= Product.find(@order.product_id).description %><br>
+    </p>
+    <p>
+        <%= link_to "購入する", '/orders' %><br>
+    </p>
+        
+    <p>
+        <%= link_to "戻る", :back %><br>
+    </p>
+</div>

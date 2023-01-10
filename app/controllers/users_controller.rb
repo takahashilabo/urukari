@@ -27,4 +27,5 @@ class UsersController < ApplicationController
         user.update(name: params[:user][:name],email: params[:user][:email],address: params[:user][:address],number: params[:user][:number])
         redirect_to products_path
     end
+    
 end
