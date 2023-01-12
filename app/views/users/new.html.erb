@@ -1,15 +1,30 @@
-
-<%= form_for @user , url: {action: :create} do |t| %>
-    <%= t.label :name, '名前' %>
-    <%= t.text_field :name %>
-    <%= t.label :password, 'パスワード' %>
-    <%= t.password_field :password %>
-    <%= t.label :email, 'メールアドレス' %>
-    <%= t.text_field :email %>
-    <%= t.label :address, '住所' %>
-    <%= t.text_field :address %>
-    <%= t.label :number, '電話番号(ハイフンなし)' %>
-    <%= t.text_field :number%>
-    <%= t.submit '登録' %>
-<% end %>
- 
+<div class="new">
+    <h1 class="new-title">新規登録</h1>
+        <%= form_for @user , url: {action: :create} do |t| %>
+            <table class="new-table">
+                <tr>
+                    <th class="new-item"><%= t.label :name, '名前' %></th>
+                    <td class="new-body"><%= t.text_field :name %></td>
+                </tr>
+                <tr>
+                    <th class="new-item"><%= t.label :password, 'パスワード' %></th>
+                    <td class="new-body"><%= t.password_field :password %></td>
+                </tr>
+                <tr>
+                    <th class="new-item"><%= t.label :email, 'メールアドレス' %></th>
+                    <td class="new-body"><%= t.email_field :email %></td>
+                </tr>
+                <tr>
+                    <th class="new-item"><%= t.label :address, '住所' %></th>
+                    <td class="new-body"><%= t.text_field :address %></td>
+                </tr>
+                <tr>
+                    <th class="new-item"><%= t.label :number, '電話番号(ハイフンなし)' %></th>
+                    <td class="new-body"><%= t.text_field :number%></td>
+                </tr>
+            </table>
+            <div class='user-new-submit'>
+                <%= t.submit '登録' %>
+            </div>
+        <% end %>
+</div>
