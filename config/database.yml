@@ -25,7 +25,4 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: urukari_render_v4zm
-  username: urukari_render_v4zm_user
-  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL'] %>
+  
