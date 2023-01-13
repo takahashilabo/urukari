@@ -1,4 +1,4 @@
-<%= form_for @user , url: {action: :create} do |t| %>
+<%= form_for @user , action: :create do |t| %>
     <%= t.label :name, '名前' %>
     <%= t.text_field :name %>
     <%= t.label :password, 'パスワード' %>

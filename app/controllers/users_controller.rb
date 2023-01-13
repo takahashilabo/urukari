@@ -5,8 +5,8 @@ class UsersController < ApplicationController
     end
     
     def create
-        user = User.new(email: params[:user][:email], password: BCrypt::Password.create(params[:user][:password]), name: params[:user][:name], address: params[:user][:address], number: params[:user][:number])
-        if user.save
+        @user = User.new(email: params[:user][:email], password: BCrypt::Password.create(params[:user][:password]), name: params[:user][:name], address: params[:user][:address], number: params[:user][:number])
+        if @user.save
             flash[:notice] = "登録が完了しました"
             redirect_to top_login_path
         else
