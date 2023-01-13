@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div class="new">
     <h1 class="new-title">新規登録</h1>
         <%= form_for @user , url: {action: :create} do |t| %>
@@ -29,18 +28,3 @@
             </div>
         <% end %>
 </div>
-=======
-<%= form_for @user , action: :create do |t| %>
-    <%= t.label :name, '名前' %>
-    <%= t.text_field :name %>
-    <%= t.label :password, 'パスワード' %>
-    <%= t.password_field :password %>
-    <%= t.label :email, 'メールアドレス' %>
-    <%= t.email_field :email %>
-    <%= t.label :address, '住所' %>
-    <%= t.text_field :address %>
-    <%= t.label :number, '電話番号(ハイフンなし)' %>
-    <%= t.telephone_field :number%>
-    <%= t.submit '登録' %>
-<% end %>
->>>>>>> users_error_fix
