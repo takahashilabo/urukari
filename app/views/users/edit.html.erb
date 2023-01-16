@@ -1,3 +1,6 @@
+<header class="header">
+    <p class="index-header">urukari</p>
+</header>
 <div class="edit">
     <h1 class="edit-title">個人情報編集ページ</h1>
         <%= form_for @user , url: {action: :update} do |f| %>
@@ -24,4 +27,5 @@
         <div class='user-edit-logout'>
             <%= link_to 'ログアウト', top_logout_path %>
         </div>
+    
 </div>

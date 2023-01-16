@@ -5,9 +5,11 @@
     box-sizing: border-box;
     color: #333;
     width: 900px;
-    height: 960px;
     margin: 0 auto;
     padding: 60px 0;
+    padding-bottom: 30px;
+    height: 960px;
+    
 }
 
 .new-title{
@@ -50,12 +52,15 @@
 }
 
 .product-show {
-    box-sizing: border-box;
-    width: 900px;
-    height: 960px;
     margin: 0 auto;
-    padding: 60px 0;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 30px;
+    height: auto;
+    overflow: hidden;
+    
 }
 
 .product-show-title {
@@ -88,67 +93,59 @@
     width: 60%;
 }
 
-.order-new {
-    box-sizing: border-box;
-    width: 900px;
-    height: 960px;
-    margin: 0 auto;
-    padding: 60px 0;
-    text-align: center;
-}
 
-.order-new-title {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.order-new-confirmation {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.order-index {
-    box-sizing: border-box;
-    width: 900px;
-    height: 960px;
-    margin: 0 auto;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.order-index-title {
-    font-size: 40px;
-    text-align: center;
-}
 
 .index {
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+    height: auto;
+    overflow: hidden;
 }
 
-.index-info {
-    display: center;
-    
-}
 
 .index-infomation {
     text-align: center;
 }
 
-.index-info > * {
-    width: 49%;
-　　margin-bottom: 15px;
-　　margin-left: 2%;
-　　display: inline-block;
-}
-
-.index-info > *:nth-child(2n + 1) {
-　　margin-left:0;
-}
 
 .index-edit {
     text-align: center;
 } 
+
+.header {
+    background-color: #D5EAD8; 
+    padding: 15px 0;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.index-header {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+}
+
+.index-header-lnk {
+    text-align: right;
+}
+
+.footer {
+    background-color: #D5EAD8;
+    padding: 10px 0;
+    margin: 10px auto;
+    width: 90%;
+    text-align: right;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer-info {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Georgia";
+}

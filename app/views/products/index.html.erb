@@ -1,38 +1,31 @@
-<header>
+<header class="header">
     <p class="index-header">urukari</p>
-    <p>
+    <p class="index-header-lnk">
         <%= link_to "新商品追加", new_product_path %>
     
         <%= link_to "ユーザー情報を見る", '/users/:id' %>
     </p>
 </header>
+<br>
 <div class="index">
-    
-    
     <% @products.each do |f| %>
-        
-        <div class="index-info">
-            <div><%= image_tag "/get_image/#{f.id}" %>
-        
+        <%= image_tag "/get_image/#{f.id}" %>
         <br>
-            <div class="index-infomation">
-                <%= f.title %>
-                <%= f.price %>円
-            </div>
-            <br>
-            <div class="index-edit">
-                <%= link_to '削除', product_path(f.id), method: :delete %>
-                <%= link_to '表示', product_path(f.id) %>
-            </div>
-            <% if @flag == true then %>
-            <p>
-                Sold Out<br>
-            </p>
-            </div>
+        <div class="index-infomation">
+            <%= f.title %>
+            <%= f.price %>円
         </div>
+        <br>
+        <div class="index-edit">
+            <%= link_to '削除', product_path(f.id), method: :delete %>
+            <%= link_to '表示', product_path(f.id) %>
+        </div>
+        <% if @flag == true then %>
+        <p>
+            Sold Out<br>
+        </p>
         <% end %>
     <% end %>
     
-    
-    
 </div>
+
