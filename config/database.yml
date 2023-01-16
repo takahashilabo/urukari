@@ -25,5 +25,12 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
+<<<<<<< HEAD
   
+=======
+  database: sinjo_takata
+  username: sinjo_takata_user
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+>>>>>>> refs/remotes/origin/master
   
