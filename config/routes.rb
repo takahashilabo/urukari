@@ -1,16 +1,19 @@
 Rails.application.routes.draw do
-    post 'top/login'
-    get 'top/logout'
-    get 'top/login'
+  resources :users
+  resources :products
+  resources :orders
+
+  post 'top/login'
+  get 'top/logout'
+  get 'top/login'
+  get 'top/main'
+
+  get 'get_image/:id', to: 'products#get_image'
+
+  root 'top#main'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-    resources :users
-    
 #    root 'top#login'
-    root 'top#main'
-    get 'top/main'
-    get 'top/login'
-    post 'products/index'
-    get 'get_image/:id', to: 'products#get_image'
-    resources :products
-    resources :orders
+#    get 'top/login'
+#    post 'products/index'
 end
